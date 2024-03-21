@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "airflow-spark-pipeline"
+version = "0.1.0"
+description = "Data engineering project for portfolio"
+authors = ["pedro <108994150+pedro-ggomes@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.8"
+pyspark = "^3.5.1"
+apache-airflow = "^2.8.3"
+pandas = "^2.2.1"
+requests = "^2.31.0"
+pyarrow = "^15.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+package-mode = false
