@@ -1,0 +1,27 @@
+[2024-03-25 14:39:17,466] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: test_dag.test_task 2024-03-25T14:28:56.493530+00:00 [queued]>
+[2024-03-25 14:39:17,490] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: test_dag.test_task 2024-03-25T14:28:56.493530+00:00 [queued]>
+[2024-03-25 14:39:17,491] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-25 14:39:17,492] {taskinstance.py:1069} INFO - Starting attempt 1 of 6
+[2024-03-25 14:39:17,493] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-25 14:39:17,514] {taskinstance.py:1089} INFO - Executing <Task(BashOperator): test_task> on 2024-03-25T14:28:56.493530+00:00
+[2024-03-25 14:39:17,519] {standard_task_runner.py:52} INFO - Started process 54 to run task
+[2024-03-25 14:39:17,524] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'test_dag', 'test_task', '2024-03-25T14:28:56.493530+00:00', '--job-id', '3', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmp0ho801dd', '--error-file', '/tmp/tmpa3t2_ipj']
+[2024-03-25 14:39:17,525] {standard_task_runner.py:77} INFO - Job 3: Subtask test_task
+[2024-03-25 14:39:17,579] {logging_mixin.py:104} INFO - Running <TaskInstance: test_dag.test_task 2024-03-25T14:28:56.493530+00:00 [running]> on host b9ac9f1e1168
+[2024-03-25 14:39:17,639] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Pedro
+AIRFLOW_CTX_DAG_ID=test_dag
+AIRFLOW_CTX_TASK_ID=test_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-25T14:28:56.493530+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-03-25T14:28:56.493530+00:00
+[2024-03-25 14:39:17,641] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2024-03-25 14:39:17,643] {bash.py:158} INFO - Running command: echo hello world!
+[2024-03-25 14:39:17,653] {bash.py:169} INFO - Output:
+[2024-03-25 14:39:17,654] {bash.py:173} INFO - hello world!
+[2024-03-25 14:39:17,655] {bash.py:177} INFO - Command exited with return code 0
+[2024-03-25 14:39:17,686] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=test_dag, task_id=test_task, execution_date=20240325T142856, start_date=20240325T143917, end_date=20240325T143917
+[2024-03-25 14:39:17,718] {taskinstance.py:1246} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-03-25 14:39:17,740] {local_task_job.py:146} INFO - Task exited with return code 0
