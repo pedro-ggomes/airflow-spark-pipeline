@@ -18,4 +18,5 @@ ETL de dados do TMDB (API gratuita) de informações sobre filmes e séries, arm
 após a execução dos comandos o Airflow estará rodando no localhost:8080
 
 ##Arquitetura da aplicação
+
 ![404](project-images/pipeline.jpg)
